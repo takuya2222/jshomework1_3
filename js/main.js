@@ -1,8 +1,8 @@
 "use strict"
 
-const array = ['掃除','買い物','散歩'];
 
 function todo() {
+  const array = ['掃除','買い物','散歩'];
   console.log(array);
 } 
 
@@ -10,7 +10,7 @@ todo();
 
 const task = prompt('タスクを入力してください。');
 array.push(task);
-todo(array);
+console.log(array);
 
 
 
