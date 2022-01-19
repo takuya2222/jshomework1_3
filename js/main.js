@@ -1,16 +1,27 @@
 "use strict"
 
+const todos = ['掃除','買い物','散歩'];
+const template =  `
+=========================
+現在持っているタスク一覧
+=========================
+`;
 
-function todo() {
-  const array = ['掃除','買い物','散歩'];
-  console.log(array);
-} 
+function Todo() {
+  console.log(template);
+  const todos = ['掃除','買い物','散歩'];
+  console.log(todos);
+};
 
-todo();
+function addTodo() {
+  console.log(template);
+  const add = prompt('タスクを入力してください。');
+  todos.push(add);
+  console.log(todos);
+};  
 
-const task = prompt('タスクを入力してください。');
-array.push(task);
-console.log(array);
+Todo();
+addTodo();
 
 
 
