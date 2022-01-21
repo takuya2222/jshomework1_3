@@ -1,32 +1,27 @@
 "use strict"
 
-const todos = ['掃除','買い物','散歩'];
-const template =  `
+const tasks = ['掃除','買い物','散歩'];
+const template = `
 =========================
 現在持っているタスク一覧
 =========================
 `;
 
-function Todo() {
+let showTasks = () => {
   console.log(template);
-  const todos = ['掃除','買い物','散歩'];
-  console.log(todos);
+  for (let i = 0; i < tasks.length; i++) {
+    console.log(tasks[i]);
+  }
 };
 
-function addTodo() {
+let addTodo = () => {
   console.log(template);
   const add = prompt('タスクを入力してください。');
-  todos.push(add);
-  console.log(todos);
+  tasks.push(add);
+  for (let i = 0; i < tasks.length; i++) {
+    console.log(tasks[i]);
+  }
 };  
 
-Todo();
+showTasks();
 addTodo();
-
-
-
-
-// ①「現在持っているタスク一覧」とその一覧が元から表記されている
-// ②「タスクを入力してください。」がポップアップとして出ている
-// ③「ああ」を入力する
-// ④「ああ」が追加されたタスク一覧が新たに下に表記される
