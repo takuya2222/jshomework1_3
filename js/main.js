@@ -9,18 +9,13 @@ const template = `
 
 let showTasks = () => {
   console.log(template);
-  for (let i = 0; i < tasks.length; i++) {
-    console.log(tasks[i]);
-  }
-};
+  tasks.forEach(element => console.log(element));
+  };
 
 let addTodo = () => {
-  console.log(template);
   const add = prompt('タスクを入力してください。');
   tasks.push(add);
-  for (let i = 0; i < tasks.length; i++) {
-    console.log(tasks[i]);
-  }
+  showTasks();
 };  
 
 showTasks();
